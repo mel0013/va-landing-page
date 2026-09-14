@@ -1,5 +1,120 @@
 body {
+  margin: 0;
   font-family: "Montserrat", sans-serif;
   background-color: #000000;
   color: #ffffff;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero */
+.hero-points {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background-color: #f2d6d6;
+  color: #000000;
+  padding: 10px 14px;
+  border-radius: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #ddbaba;
+}
+
+.btn-secondary {
+  color: #f2d6d6;
+  border-bottom: 3px solid #f2d6d6;
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  color: #ddbaba;
+  border-color: #ddbaba;
+}
+
+/* How it works */
+#how-it-works h2 {
+  text-align: center;
+}
+
+.card h3 {
+  color: #f2d6d6;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.card {
+  border: 2px solid #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Services */
+.services-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.service-group {
+  border: 2px solid #ffffff;
+  padding: 24px;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  main {
+    max-width: 1000px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#services h2 {
+  text-align: center;
+}
+
+.service-group h3 {
+  color: #f2d6d6;
+}
+
+/* About me */
+#about h2 {
+  text-align: center;
 }
