@@ -11,10 +11,44 @@ main {
   padding: 0 24px;
 }
 
+.section {
+  margin-top: 40px;
+}
+
 /* Hero */
+.hero h1 {
+  text-align: center;
+  letter-spacing: 5px;
+}
+
 .hero-points {
   list-style: none;
   padding-left: 0;
+  width: fit-content;
+  margin: 24px auto;
+  text-align: left;
+}
+
+.hero-points li {
+  margin-bottom: 8px;
+}
+
+.hero .button-group {
+  justify-content: center;
+}
+
+/* Divider */
+.divider {
+  margin-top: 40px;
+}
+
+.divider img {
+  display: block;
+  width: 100px;
+  height: 30px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
 }
 
 /* Buttons */
@@ -117,4 +151,17 @@ main {
 /* About me */
 #about h2 {
   text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 32px 24px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer p {
+  max-width: 900px;
+  margin: 0 auto 12px;
 }
